@@ -1,0 +1,40 @@
+---
+  # Standard model info
+  # This section is required for all models regardless of implemtation
+  model_name: i2b2_2018_BERT100%
+  info: This is a RE model trained with the 2018 i2b2 (Medication and ADE extraction) challenge training set. 
+  categories:
+    - Reason-Drug
+    - Route-Drug
+    - Strength-Drug
+    - Frequency-Drug
+    - Duration-Drug
+    - Form-Drug
+    - Dosage-Drug
+    - ADE-Drug
+  # Model-specific configs
+  # This section stores configs for the backend_model's children class 
+  # this is customized for different model implemtation
+  possible_rel: 
+    - ['Reason', 'Drug']
+    - ['Drug', 'Route']
+    - ['Drug', 'Strength']
+    - ['Drug', 'Frequency']
+    - ['Duration', 'Drug']
+    - ['Drug', 'Form']
+    - ['Drug', 'Dosage']
+    - ['Drug', 'ADE']
+  token_length: 64
+   
+  label_map: 
+    No_relation : 0
+    Reason-Drug : 1
+    Route-Drug : 2
+    Strength-Drug : 3
+    Frequency-Drug : 4
+    Duration-Drug : 5
+    Form-Drug : 6
+    Dosage-Drug : 7
+    ADE-Drug : 8
+    
+  eval_batch_size: 128

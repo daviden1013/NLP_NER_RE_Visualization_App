@@ -1,0 +1,87 @@
+---
+  # Standard model info
+  # This section is required for all models regardless of implemtation
+  model_name: i2b2_2014_BERT3
+  info: This is a NER model trained with the 2014 i2b2 (PHI de-identification) challenge training set a random sample of 3 notes (N=3). 
+  categories:
+    - AGE
+    - CONTACT_EMAIL
+    - CONTACT_FAX
+    - CONTACT_PHONE
+    - CONTACT_URL
+    - DATE
+    - ID_BIOID
+    - ID_DEVICE
+    - ID_HEALTHPLAN
+    - ID_IDNUM
+    - ID_MEDICALRECORD
+    - LOCATION_CITY
+    - LOCATION_COUNTRY
+    - LOCATION_HOSPITAL
+    - LOCATION_LOCATION-OTHER
+    - LOCATION_ORGANIZATION
+    - LOCATION_STATE
+    - LOCATION_STREET
+    - LOCATION_ZIP
+    - NAME_DOCTOR
+    - NAME_PATIENT
+    - NAME_USERNAME
+    - PHI
+    - PROFESSION
+  # Model-specific configs
+  # This section stores configs for the backend_model's children class 
+  # this is customized for different model implemtation
+  token_length: 256
+  BIO_mode: BIO
+  label_map: 
+    O: 0
+    B-AGE: 1
+    I-AGE: 2
+    B-CONTACT_EMAIL: 3
+    I-CONTACT_EMAIL: 4
+    B-CONTACT_FAX: 5
+    I-CONTACT_FAX: 6
+    B-CONTACT_PHONE: 7
+    I-CONTACT_PHONE: 8
+    B-CONTACT_URL: 9
+    I-CONTACT_URL: 10
+    B-DATE: 11
+    I-DATE: 12
+    B-ID_BIOID: 13
+    I-ID_BIOID: 14
+    B-ID_DEVICE: 15
+    I-ID_DEVICE: 16
+    B-ID_HEALTHPLAN: 17
+    I-ID_HEALTHPLAN: 18
+    B-ID_IDNUM: 19
+    I-ID_IDNUM: 20
+    B-ID_MEDICALRECORD: 21
+    I-ID_MEDICALRECORD: 22
+    B-LOCATION_CITY: 23
+    I-LOCATION_CITY: 24
+    B-LOCATION_COUNTRY: 25
+    I-LOCATION_COUNTRY: 26
+    B-LOCATION_HOSPITAL: 27
+    I-LOCATION_HOSPITAL: 28
+    B-LOCATION_LOCATION-OTHER: 29
+    I-LOCATION_LOCATION-OTHER: 30
+    B-LOCATION_ORGANIZATION: 31
+    I-LOCATION_ORGANIZATION: 32
+    B-LOCATION_STATE: 33
+    I-LOCATION_STATE: 34
+    B-LOCATION_STREET: 35
+    I-LOCATION_STREET: 36
+    B-LOCATION_ZIP: 37
+    I-LOCATION_ZIP: 38
+    B-NAME_DOCTOR: 39
+    I-NAME_DOCTOR: 40
+    B-NAME_PATIENT: 41
+    I-NAME_PATIENT: 42
+    B-NAME_USERNAME: 43
+    I-NAME_USERNAME: 44
+    B-PHI: 45
+    I-PHI: 46
+    B-PROFESSION: 47
+    I-PROFESSION: 48
+  eval_batch_size: 128
+  device: cpu

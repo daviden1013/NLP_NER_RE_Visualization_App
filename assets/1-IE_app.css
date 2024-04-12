@@ -1,0 +1,280 @@
+#app-container {
+    width: 100%;
+	height: 100%;
+    max-width: none;
+}
+
+#content {
+	margin: 0px;
+	padding: 0px 1px;
+}
+
+/* For >2K monitors */
+@media screen and (min-width: 2560px){
+	.banner {
+		height: 7rem;
+		padding: 1rem 2rem;
+		background-color: #F6F4F4;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#left-column {
+		float: left;
+		margin: 0px;
+		padding: 1rem 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		width: 30%;
+		height: 1200px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #c3c4c7;
+	}
+
+	#right-column {
+		float: left;
+		margin: 0px;
+		padding: 1rem 2rem;
+		flex-direction: column;
+		width: 70%;
+		height: 1200px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #c3c4c7;
+	}
+
+	#input-text-container {
+		width: 100%;
+		height: 400px;
+	}
+
+	#text-input {
+		width: 100%;
+		height: 300px;
+	}
+
+	#text-upload-panel {
+		height: 45px;
+		line-height: 45px;
+		border-width: 1px;
+		border-style: dashed;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+
+	#display-textbox-container {
+		width: 100%;
+		height: 600px;
+	}
+
+	#display-textbox {
+		width: 68%;
+		height: 590px;
+		position: absolute;
+		z-index: 2;
+	}
+
+	#display-relation {
+		width: 68%;
+		height: 590px;
+		position: absolute;
+		overflow: scroll;
+		z-index: 1;
+	}
+	
+	#relation-table-container {
+	margin: 0px;
+	padding: 2px;
+	width: 50%;
+	height: 500px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+	#entity-table-container {
+		margin: 0px;
+		padding: 2px;
+		width: 50%;
+		height: 500px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #c3c4c7;
+	}
+}
+
+#thumbnail {
+	width: 16vh;
+	height: 8vh;
+}
+
+.banner {
+    height: 10vh;
+    padding: 1rem 2rem;
+    background-color: #F6F4F4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+H5 {
+	color: #545c64;
+	font-weight: bold;
+}
+
+#left-column {
+    float: left;
+    margin: 0px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+	height: 90vh;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+#right-column {
+    float: left;
+    margin: 0px;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    width: 70%;
+	height: 90vh;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+#input-text-container {
+	width: 100%;
+	height: 400px;
+}
+
+#text-input {
+	width: 100%;
+	height: 30vh;
+}
+
+#text-upload-panel {
+    height: 45px;
+    line-height: 45px;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#ner-model-container {
+	padding: 1rem 0rem;
+}
+
+#re-model-container {
+	padding: 1rem 0rem;
+}
+
+.button-holder {
+	margin: 5px;
+	flex-direction: row;
+	padding: 0rem 5px;
+	float: right;
+}
+
+.submit-button-holder {
+	align-items: right;
+}
+
+#submit-button {
+	background-color: white;
+	color: green;
+}
+
+#clear-button {
+	background-color: white;
+	color: red;
+}
+
+.scrollabletextbox {
+    height: 100%;
+    overflow: scroll;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+#display-textbox-container {
+	width: 100%;
+	height: 45vh;
+}
+
+#display-textbox {
+	width: 66.5%;
+	height: 45vh;
+	position: absolute;
+	z-index: 2;
+}
+
+#display-relation {
+	width: 66.5%;
+	height: 45vh;
+	position: absolute;
+	overflow: scroll;
+	z-index: 1;
+}
+
+.relation-path {
+	opacity: 0.6;
+	stroke: #000208;
+	fill: none;
+	stroke-width: 2;
+}
+
+#table-container {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#relation-table-container {
+	padding: 2px;
+	width: 50%;
+	height: 39vh;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+#entity-table-container {
+	padding: 2px;
+	width: 50%;
+	height: 39vh;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c3c4c7;
+}
+
+.entity-mark {
+	padding-right: 0.3em;
+	padding-left: 0.3em;
+	padding-top: 0.05em;
+	padding-bottom: 0.05em;
+	margin: 0 0.1em;
+	line-height: 1;
+	border-radius: 0.35em;
+}
+
+.entity-type-tag {
+	font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 0.35em;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+

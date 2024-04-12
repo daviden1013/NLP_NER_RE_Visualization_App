@@ -1,0 +1,42 @@
+---
+  # Standard model info
+  # This section is required for all models regardless of implemtation
+  model_name: i2b2_2018_BERT100%
+  info: This is a NER model trained with the 2018 i2b2 (Medication and ADE extraction) challenge training set. 
+  categories:
+    - Drug
+    - Strength
+    - Dosage
+    - Duration
+    - Frequency
+    - Form
+    - Route
+    - Reason
+    - ADE
+  # Model-specific configs
+  # This section stores configs for the backend_model's children class 
+  # this is customized for different model implemtation
+  token_length: 256
+  BIO_mode: BIO
+  label_map: 
+    O: 0
+    B-Drug: 1
+    I-Drug: 2
+    B-Strength: 3
+    I-Strength: 4
+    B-Dosage: 5
+    I-Dosage: 6
+    B-Duration: 7
+    I-Duration: 8
+    B-Frequency: 9
+    I-Frequency: 10
+    B-Form: 11
+    I-Form: 12
+    B-Route: 13
+    I-Route: 14
+    B-Reason: 15
+    I-Reason: 16
+    B-ADE: 17
+    I-ADE: 18
+  eval_batch_size: 128
+  device: cpu
