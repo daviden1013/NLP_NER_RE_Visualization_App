@@ -1,5 +1,8 @@
 # ignore models
 *.json
 *.bin
+# ignore python cache
 *.pyc
+__pycache__/
+# others
 IE_model_test.py
