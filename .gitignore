@@ -1,4 +1,5 @@
 # ignore models
 *.json
 *.bin
+*.pyc
 IE_model_test.py
