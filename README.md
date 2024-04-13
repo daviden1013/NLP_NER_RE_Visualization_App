@@ -1,5 +1,6 @@
 # Overview
-An interactive web App for named entity recognition (NER) and relation extraction (RE) model visualization. 
+An interactive web App for named entity recognition (NER) and relation extraction (RE) model visualization. The main framework is [Plotly Dash](https://dash.plotly.com/) with Python for the backend and JavaScrtip for frontend. 
+In this repo, we use [PyTorch](https://pytorch.org/) to implement the backend NLP model. More details about the backend is available in [this repo](https://github.com/daviden1013/NLP_IE_Pipelines.git) 
 ## Demo
 **App layout and features**
 
@@ -38,7 +39,7 @@ For deployment on other IP, replace the IP and port in *./app_config.yaml* with 
   port: <new_port>
 ~~~
 # How to customize the backend NLP model
-This frontend App is by default connected to the BERT information extraction pipeline (https://github.com/daviden1013/NLP_IE_Pipelines.git). See *./IE_model.py* and *./IE_modules/* for more details.
+This frontend App is by default connected to a BERT information extraction pipeline in [this repo](https://github.com/daviden1013/NLP_IE_Pipelines.git). See *./IE_model.py* and *./IE_modules/* for more details.
 All backend NLP models are stored in the *./models/* following file structure:
 ~~~
 ./models
