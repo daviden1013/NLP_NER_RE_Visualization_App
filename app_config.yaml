@@ -1,4 +1,9 @@
 ---
+  # IP address this App will run on, default is localhost
+  address: localhost
+  # specify port, default is 8050
+  port: 8050
+  # color codes for entity types following the orders below
   default_color_codes:
     - "#1f77b4"
     - "#ff7f0e"

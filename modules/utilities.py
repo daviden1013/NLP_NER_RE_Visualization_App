@@ -164,15 +164,16 @@ class backend_model:
   def __init__(self):
     """
     This is a parent class for individual backend implementation to inherit
-    The get_entities() and get_relations() methods must be implemented and return 
+    The get_entities(), get_relations(), and reset() methods must be implemented and return 
     consistent data structure as defined.
     """
     pass
   
   @abc.abstractmethod
-  def get_entities(self) -> List[Dict[str,str]]:
+  def get_entities(self, text:str) -> List[Dict[str,str]]:
     """
-    This method outputs a dict of extracted entities
+    This method inputs the text (from input textbox) 
+    and outputs a dict of extracted entities
 
     Returns
     -------
@@ -183,9 +184,11 @@ class backend_model:
     
     
   @abc.abstractmethod
-  def get_relations(self, entities:List[Dict[str,str]]) -> List[Dict[str,str]]:
+  def get_relations(self, text:str, entities:List[Dict[str,str]]) -> List[Dict[str,str]]:
     """
-    This method outputs a dict of extracted relations
+    This method inputs the text (from input textbox) and a list of entities:
+      list of dict with {entity_id, entity_type, entity_text, start, end}
+    Outputs a dict of extracted relations
 
     Returns
     -------

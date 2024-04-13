@@ -274,4 +274,6 @@ def upload(text_upload_panel_filename, text_upload_panel_contents):
 
 
 if __name__ == "__main__":
-  app.run(debug=False)
+  app.run(debug=False, 
+          port=CONFIG['port'],
+          host=CONFIG['address'])
