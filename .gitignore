@@ -4,5 +4,7 @@
 # ignore python cache
 *.pyc
 __pycache__/
+modules/__pycache__/
+IE_modules/__pycache__/
 # others
 IE_model_test.py
